@@ -1,0 +1,478 @@
+/*================== FONTES ODEBRECHT =====================*/
+
+@font-face {
+    font-family: 'odebrecht';
+    src: url('fonts/Odebrecht-Sans Bold Italic-webfont.eot');
+    src: url('fonts/Odebrecht-Sans Bold Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Odebrecht-Sans Bold Italic-webfont.woff2') format('woff2'),
+         url('fonts/Odebrecht-Sans Bold Italic-webfont.woff') format('woff'),
+         url('fonts/Odebrecht-Sans Bold Italic-webfont.ttf') format('truetype'),
+         url('fonts/Odebrecht-Sans Bold Italic-webfont.svg#odebrechtsans_bold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'odebrecht';
+    src: url('fonts/Odebrecht-Sans Bold-webfont.eot');
+    src: url('fonts/Odebrecht-Sans Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Odebrecht-Sans Bold-webfont.woff2') format('woff2'),
+         url('fonts/Odebrecht-Sans Bold-webfont.woff') format('woff'),
+         url('fonts/Odebrecht-Sans Bold-webfont.ttf') format('truetype'),
+         url('fonts/Odebrecht-Sans Bold-webfont.svg#odebrechtsans_bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'odebrecht';
+    src: url('fonts/Odebrecht-Sans Italic-webfont.eot');
+    src: url('fonts/Odebrecht-Sans Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Odebrecht-Sans Italic-webfont.woff2') format('woff2'),
+         url('fonts/Odebrecht-Sans Italic-webfont.woff') format('woff'),
+         url('fonts/Odebrecht-Sans Italic-webfont.ttf') format('truetype'),
+         url('fonts/Odebrecht-Sans Italic-webfont.svg#odebrechtsans_italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'odebrecht';
+    src: url('fonts/Odebrecht-Sans-webfont.eot');
+    src: url('fonts/Odebrecht-Sans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Odebrecht-Sans-webfont.woff2') format('woff2'),
+         url('fonts/Odebrecht-Sans-webfont.woff') format('woff'),
+         url('fonts/Odebrecht-Sans-webfont.ttf') format('truetype'),
+         url('fonts/Odebrecht-Sans-webfont.svg#odebrechtsans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'odebrecht_slab';
+    src: url('fonts/Odebrecht-Slab Italic-webfont.eot');
+    src: url('fonts/Odebrecht-Slab Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Odebrecht-Slab Italic-webfont.woff2') format('woff2'),
+         url('fonts/Odebrecht-Slab Italic-webfont.woff') format('woff'),
+         url('fonts/Odebrecht-Slab Italic-webfont.ttf') format('truetype'),
+         url('fonts/Odebrecht-Slab Italic-webfont.svg#odebrechtslab_italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'odebrecht_slab';
+    src: url('fonts/Odebrecht-Slab-webfont.eot');
+    src: url('fonts/Odebrecht-Slab-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Odebrecht-Slab-webfont.woff2') format('woff2'),
+         url('fonts/Odebrecht-Slab-webfont.woff') format('woff'),
+         url('fonts/Odebrecht-Slab-webfont.ttf') format('truetype'),
+         url('fonts/Odebrecht-Slab-webfont.svg#odebrechtslab') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*================== FONTES ODEBRECHT FIM =====================*/
+
+body, html{
+	font-family:'odebrecht', arial;
+	width:100%;
+	margin:0;
+	/*min-width:380px;*/
+}
+
+.fade{
+	width:100%;
+	/*min-width: 380px;*/
+	position:absolute;
+	height:100%;
+	background:#58585b;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	-moz-opacity: 0.70;
+	opacity: 0.70;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+	display:none;
+}
+
+/*--------------------- TOPO ---------------------*/
+
+.topo{
+    height: 70px;
+    width: 100%;
+    /*min-width: 380px;*/
+    background-color: #e4202d;
+    border-bottom-color: #790000;
+	border-bottom-style:solid;
+	border-bottom-width:2px;
+    position: fixed;
+	overflow:auto;
+    top: 0;
+	z-index:11;
+}
+
+.topo .logo{
+	background:url('images/logo.png') no-repeat left center;
+	background-size:100%;
+	width: 55%;
+	max-width: 290px;
+	height: 70px;
+	float: left;
+}
+
+
+/*-- BUSCA --*/
+
+.topo .buscar{
+	background: url('images/lupa.png') no-repeat center;
+	background-size: 140%;
+	width: 15%;
+	max-width: 75px;
+	height: 70px;
+	position: relative;
+	float: right;
+}
+
+.buscarhidden{
+    position: fixed;
+    height: 140px;
+    top: 70px;
+    width: 100%;
+    /*min-width: 380px;*/
+    background: #c4151c;
+    border-bottom: 2px solid #790000;
+	z-index:11;
+    display:none;
+}
+
+.buscarhidden .buscarinput{
+    width: 95%;
+    overflow: auto;
+    margin: 12px auto;
+    background: #fff;
+}
+
+.buscarhidden .buscarinput .filtropessoas{
+    width: 99%;
+    height: 44px;
+    margin: 0.5%;
+    float: left;
+	overflow: hidden;	
+    background: url('images/seta_select.png') no-repeat center right #58585b;
+}
+
+.buscarhidden .buscarinput .filtropessoas select.selectpessoas{
+	  background-color: transparent;
+	  font-weight: normal;
+	  width: 140%;
+	  padding: 5px;
+	  font-size: 100%;
+	  line-height: 1;
+	  border: none;
+	  height: 44px;
+	  -webkit-appearance: none;
+	  color: #fff
+	  
+}
+
+.buscarhidden .buscarinput .filtropessoas option{
+	background-color:#58585b;
+}
+
+.buscarhidden .buscarinput .input{
+    width: 85%;    
+	height: 44px;    
+    margin: 0.5%;    
+	
+    padding-left: 1%;
+    float: left;    
+    background-color: #FFFFFF;
+}
+
+.buscarhidden .buscarinput .input input{
+    height: 44px;
+    line-height: 42px;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    font-style: italic;
+    color: #87898c;
+	background-color: transparent;
+}
+
+.buscarhidden .buscarinput .submit{
+    width: 11%;    
+	height: 44px;    
+    margin: 0.5%;    
+    float: right;    
+    background-color: #cccccc;
+    background-image: none;
+}
+
+.buscarhidden .buscarinput .submit input{
+    border: none;
+	text-align:center;
+	padding:0;
+    background: #ccc;
+    background-image: none;
+    height: 44px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+	-webkit-appearance: none;
+}
+
+/*-- BUSCA FIM --*/
+
+.topo .menu:hover, .topo .menu.selected, .topo .buscar:hover, .topo .buscar.selected{
+	background-color:#c4151c;
+}
+
+/*-- MENU --*/
+
+.topo .menu{
+	background: url('images/menu.png') no-repeat center;
+	background-size: 140%;
+	width: 15%;    
+	max-width: 75px;
+	height: 70px;    
+	float: right;
+	/* z-index:11; */
+	position: relative;
+}
+
+.menuhidden{
+	display:none;
+	background-color: #c4151c;
+	border-bottom: 2px solid #790000;
+	position: absolute;
+	top: 70px;
+	z-index:10;
+	width: 100%;
+	/*min-width: 380px;*/
+}
+
+.menuhidden ul{
+    display: block;    
+    list-style-type: none;    
+    -webkit-margin-before: 0;    
+    -webkit-margin-after: 0;    -webkit-margin-start: 0px;    -webkit-margin-end: 0px;    
+    -webkit-padding-start: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menuhidden ul > li ul{
+	display:none;
+}
+
+.menuhidden li,
+.menuhidden li a{
+	color:#fff;
+	text-decoration:none;
+	display:block;
+}
+
+.seta{
+	background-image: url('images/seta_menu.png');
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+li.menu-item{
+	padding: 0;
+}
+
+li.menu-item.home{
+	background: url('images/home_icon.png') no-repeat 10px center;
+
+	padding-left: 66px;
+}
+
+li.menu-item a{
+    padding: 21px 4%;
+	cursor:pointer;
+    font-size: 22px;
+}
+
+/* CORES */
+
+li.menu-item.red{
+	background:#e41f2b;
+}
+
+li.menu-item.red ul li{
+	background: #EF323E;
+	margin:1px 0;
+	padding: 0;
+}
+
+li.menu-item.red ul  li > ul li{
+	background: #ED5C65;
+	margin:1px 0;
+	
+}
+
+li.menu-item.green{
+	background:#009946;
+}
+
+li.menu-item.green ul li{
+	background:#45b97b;
+	margin:1px 0;
+	padding: 0;
+}
+
+li.menu-item.green ul  li > ul li{
+	background:#82ce9e;
+	margin:1px 0;
+	
+}
+
+li.menu-item.green ul li > ul li > ul li{
+	background: #ABDABC;
+}
+
+
+li.menu-item.orange{
+	background:#f28b00;
+}
+
+li.menu-item.orange ul li{
+	background:#f6ad4d;
+	margin:1px 0;
+
+	padding: 0;
+}
+
+li.menu-item.orange ul  li > ul li{
+	background:#f9c47f;
+	margin:1px 0;
+	
+}
+
+li.menu-item.orange ul > li ul li > ul li{
+	background:green;
+	margin:1px 0;
+}
+/* CORES FIM*/
+
+
+/*-- MENU FIM--*/
+
+
+/*--------------------- TOPO FIM ---------------------*/
+
+/*--------------------- CONTEUDO ---------------------*/
+
+.conteudo{   
+    width: 100%;  
+    margin-top: 80px;
+    /*min-width: 380px;*/
+}
+
+.conteudo .noticias{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.conteudo .noticias .titulo{
+    font-family: 'odebrecht_slab';
+    text-transform: uppercase;
+    font-size: 27px;
+    color: #e4202d;
+    padding: 10px 0px;
+    border-bottom: 1px solid #bbbdc0;
+}
+
+.conteudo .noticias ul{
+    list-style-type: none;    
+    -webkit-margin-before: 0;    
+    -webkit-margin-after: 0;    -webkit-margin-start: 0px;    -webkit-margin-end: 0px;    
+    -webkit-padding-start: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.conteudo .noticias ul a{
+	text-decoration:none;
+	display:block;
+    border-top: 1px solid #dbdcde;
+}
+
+.conteudo .noticias ul a:first-child{
+	border:none;
+
+}
+
+.conteudo .noticias ul li{
+    overflow: auto;
+    clear: both;
+    padding: 14px 0;
+    margin: 14px 0;
+}
+
+.conteudo .noticias ul li .imagem{
+    width: 154px;
+    height: 119px;
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.conteudo .noticias ul li .imagem img{
+    width: 100%;
+    max-height: 119px;
+    max-width: 154px;
+}
+
+.conteudo .noticias ul li .data{
+    font-size: 13px;
+    font-weight: bold;
+    color: #a4a5a7;
+}
+
+.conteudo .noticias ul li .titulonoticia{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+    color: #58585b;
+}
+
+.conteudo .noticias ul li .olho{
+    font-size: 15px;    
+	font-weight: bold;    
+    color: #a3a5a7;
+}
+
+/*--------------------- CONTEUDO FIM -----------------*/
+
+/*--------------------- RODAPE -----------------*/
+
+.rodape{
+    clear: both;
+    margin-top: 10px;
+}
+
+.rodape .cinza{
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    background-color: #87898c;
+    padding: 17px;
+}
+
+.rodape .gray{
+    text-align: center;    
+	color: #fff;    
+	font-size: 14px;    
+    background-color: #58585b;    
+	padding: 17px;
+}
+
+/*--------------------- RODAPE FIM-----------------*/
